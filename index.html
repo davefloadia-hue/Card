@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商業英文訓練器 Desktop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div>
+      <h1>商業英文訓練器 Desktop</h1>
+      <div class="sub">電腦版｜鍵盤控制｜正面只有英文單字＋英文例句，背面才顯示中文</div>
+    </div>
+    <div class="badge" id="badge">20 張卡</div>
+  </div>
+  <div class="layout">
+    <aside class="panel sidebar">
+      <input id="search" class="search" placeholder="搜尋單字或分類">
+      <div class="tabs" id="tabs"></div>
+      <div class="stats">
+        <div class="stat"><div class="v" id="knownCount">0</div><div class="k">已學會</div></div>
+        <div class="stat"><div class="v" id="weakCount">0</div><div class="k">待加強</div></div>
+        <div class="stat"><div class="v" id="progressNum">0%</div><div class="k">完成率</div></div>
+        <div class="stat"><div class="v" id="currentNum">1</div><div class="k">目前卡片</div></div>
+      </div>
+      <div class="queue" id="queue"></div>
+    </aside>
+    <main class="panel main">
+      <div class="card" id="card">
+        <div>
+          <div class="meta"><div id="metaCategory"></div><div id="metaMastery"></div></div>
+          <div class="word" id="word"></div>
+          <div class="example" id="example"></div>
+          <div class="zh" id="zh" style="display:none;"></div>
+          <div class="translation" id="translation" style="display:none;"></div>
+        </div>
+        <div>
+          <div class="controls">
+            <button class="ui ghost" id="speakBtn">發音</button>
+            <button class="ui primary" id="flipBtn">翻面</button>
+            <button class="ui red" id="againBtn">不會</button>
+            <button class="ui green" id="knowBtn">會了</button>
+          </div>
+          <div class="help">
+            <div class="key"><strong>↑</strong>：發音</div>
+            <div class="key"><strong>↓</strong>：翻面</div>
+            <div class="key"><strong>←</strong>：不會</div>
+            <div class="key"><strong>→</strong>：會了</div>
+          </div>
+          <div class="footer">正面：英文單字 + 英文例句｜背面：中文 + 中文翻譯
+            <div class="progress"><div id="bar"></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<div class="notice" id="notice">已更新</div>
+<script src="cards.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

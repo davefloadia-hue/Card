@@ -1,0 +1,1 @@
+電腦版商業英文訓練器\n\n鍵盤控制：\nSpace = 翻面\nLeft Arrow = 不會\nRight Arrow = 會了\nP = 發音\n\n正面：英文單字 + 英文例句\n背面：中文 + 中文翻譯\n
